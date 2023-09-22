@@ -65,7 +65,7 @@
             <thead>
               <tr>
                 <th></th>
-                <th *ngFor="let giorno of objectKeys(orariotable$['07h50'])" style="vertical-align: middle;">{{giorno}}</th>
+                <th *ngFor="let giorno of objectKeys(orariotable$['07h50'])" style="vertical-align: middle;" [attr.class]="giorno">{{giorno}} </th>
               </tr>
             </thead>
             <tbody>

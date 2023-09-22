@@ -64,3 +64,20 @@
     font-size: medium;
     font-weight: bold;
 }
+
+
+td.martedì {
+    background-color: #eeeeee;
+}
+
+td.giovedì {
+    background-color: #eeeeee;
+}
+
+th.martedì {
+    background-color: #eeeeee;
+}
+
+th.giovedì {
+    background-color: #eeeeee;
+}
