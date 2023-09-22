@@ -1,0 +1,66 @@
+.btnDocente {
+    width: 40%;
+    min-width: 110px;
+    margin-top: 1%;
+}
+
+.btnClasse {
+    width: 30%;
+    min-width: 50px;
+    margin-top: 1%;
+}
+
+.btnAula {
+    width: 30%;
+    min-width: 50px;
+    margin-top: 1%;
+}
+
+.box-inner-doc {
+    margin: 0px;
+    width: 50%;
+    display: inline-block;
+    float: left;
+    height: 130px;
+}
+
+.box-inner-class {
+    margin: 0px;
+    width: 25%;
+    overflow: auto;
+    display: inline-block;
+    float: left;
+    height: 130px;
+}
+
+.box-inner-aula {
+    margin: 0px;
+    width: 25%;
+    overflow: auto;
+    display: inline-block;
+    float: left;
+    height: 130px;
+}
+
+.box-orario tr {
+    height: 100px;
+}
+
+.box-orario th,
+.box-orario td {
+    font-weight: bold;
+}
+
+.box-orario table td {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.box-orario table th {
+    text-align: center;
+}
+
+.materia {
+    font-size: medium;
+    font-weight: bold;
+}
