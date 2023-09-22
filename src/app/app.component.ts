@@ -221,7 +221,7 @@ export class AppComponent implements OnInit {
               }
               this.aulas$ = distinctAulas;
 
-              var days = ['lunedì','martedì','mercoledì','giovedì','venerdì','sabato'];
+              var days = ['lunedì','martedì','mercoledì','giovedì','venerdì'];
               var hours = ['07h50','08h40','09h30','10h30','11h20','12h10','13h00','13h50','14h40','15h30'];
               
               var orariotable = new Array();
@@ -250,7 +250,7 @@ export class AppComponent implements OnInit {
         //var days = {'lunedì':"",'martedì':"",'mercoledì':"",'giovedì':"",'venerdì':"",'sabato':""};
         //var orariotable = {'07h50':days,'08h40':days,'09h30':days,'10h30':days,'11h20':days,'12h10':days,'13h30':days,'14h20':days,'15h20':days,'16h10':days};
         
-        var days = ['lunedì','martedì','mercoledì','giovedì','venerdì','sabato'];
+        var days = ['lunedì','martedì','mercoledì','giovedì','venerdì'];
         var hours = ['07h50','08h40','09h30','10h30','11h20','12h10','13h00','13h50','14h40','15h30'];
         
         var orariotable = new Array();
@@ -293,8 +293,8 @@ export class AppComponent implements OnInit {
         //var days = {'lunedì':"",'martedì':"",'mercoledì':"",'giovedì':"",'venerdì':"",'sabato':""};
         //var orariotable = {'07h50':days,'08h40':days,'09h30':days,'10h30':days,'11h20':days,'12h10':days,'13h30':days,'14h20':days,'15h20':days,'16h10':days};
         
-        var days = ['lunedì','martedì','mercoledì','giovedì','venerdì','sabato'];
-        var hours = ['07h50','08h40','09h30','10h30','11h20','12h10','13h30','14h20','15h20','16h10'];
+        var days = ['lunedì','martedì','mercoledì','giovedì','venerdì'];
+        var hours = ['07h50','08h40','09h30','10h30','11h20','12h10','13h00','13h50','14h40','15h30'];
         
         var orariotable = new Array();
 
@@ -333,8 +333,8 @@ export class AppComponent implements OnInit {
         //var days = {'lunedì':"",'martedì':"",'mercoledì':"",'giovedì':"",'venerdì':"",'sabato':""};
         //var orariotable = {'07h50':days,'08h40':days,'09h30':days,'10h30':days,'11h20':days,'12h10':days,'13h30':days,'14h20':days,'15h20':days,'16h10':days};
         
-        var days = ['lunedì','martedì','mercoledì','giovedì','venerdì','sabato'];
-        var hours = ['07h50','08h40','09h30','10h30','11h20','12h10','13h30','14h20','15h20','16h10'];
+        var days = ['lunedì','martedì','mercoledì','giovedì','venerdì'];
+        var hours = ['07h50','08h40','09h30','10h30','11h20','12h10','13h00','13h50','14h40','15h30'];
         
         var orariotable = new Array();
 
