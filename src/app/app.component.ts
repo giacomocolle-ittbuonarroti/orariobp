@@ -249,16 +249,12 @@ export class AppComponent implements OnInit {
 
         var fleziones = this.leziones$.filter((element)=>{return element.DOC_COGN_NOME1 === cogn_nome || element.DOC_COGN_NOME2 ===  cogn_nome});
 
-        //var this.days = {'lunedì':"",'martedì':"",'mercoledì':"",'giovedì':"",'venerdì':"",'sabato':""};
-        //var orariotable = {'07h50':this.days,'08h40':this.days,'09h30':this.days,'10h30':this.days,'11h20':this.days,'12h10':this.days,'13h30':this.days,'14h20':this.days,'15h20':this.days,'16h10':this.days};
-        
-
         var orariotable = new Array();
 
         this.hours.forEach(hour => {
           var orariorow = new Array();
           this.days.forEach(day => {
-            orariorow[day] = {DURATA:"0"};
+            orariorow[day] = {DURATA:"1"};
           });
           orariotable[hour] = orariorow;
         });
@@ -290,15 +286,12 @@ export class AppComponent implements OnInit {
 
         var fleziones = this.leziones$.filter((element)=>{return element.CLASSE1 === classe || element.CLASSE2 ===  classe});
 
-        //var this.days = {'lunedì':"",'martedì':"",'mercoledì':"",'giovedì':"",'venerdì':"",'sabato':""};
-        //var orariotable = {'07h50':this.days,'08h40':this.days,'09h30':this.days,'10h30':this.days,'11h20':this.days,'12h10':this.days,'13h30':this.days,'14h20':this.days,'15h20':this.days,'16h10':this.days};
-
         var orariotable = new Array();
 
         this.hours.forEach(hour => {
           var orariorow = new Array();
           this.days.forEach(day => {
-            orariorow[day] = {DURATA:"0"};
+            orariorow[day] = {DURATA:"1"};
           });
           orariotable[hour] = orariorow;
         });
@@ -326,16 +319,13 @@ export class AppComponent implements OnInit {
         this.selitem = aula;
 
         var fleziones = this.leziones$.filter((element)=>{return element.AULA1 === aula || element.AULA2 ===  aula || element.AULA3 ===  aula });
-
-        //var this.days = {'lunedì':"",'martedì':"",'mercoledì':"",'giovedì':"",'venerdì':"",'sabato':""};
-        //var orariotable = {'07h50':this.days,'08h40':this.days,'09h30':this.days,'10h30':this.days,'11h20':this.days,'12h10':this.days,'13h30':this.days,'14h20':this.days,'15h20':this.days,'16h10':this.days};
-        
+      
         var orariotable = new Array();
 
         this.hours.forEach(hour => {
           var orariorow = new Array();
           this.days.forEach(day => {
-            orariorow[day] = {DURATA:"0"};
+            orariorow[day] = {DURATA:"1"};
           });
           orariotable[hour] = orariorow;
         });
