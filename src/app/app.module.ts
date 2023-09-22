@@ -8,6 +8,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { Pipe, PipeTransform } from '@angular/core'; 
 import { CourseFilterNamePipe,CourseFilterClassePipe,CourseFilterAulaPipe, ArraySortPipe } from './coursefilters.pipe';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { CourseFilterNamePipe,CourseFilterClassePipe,CourseFilterAulaPipe, Array
   imports: [
     BrowserModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
