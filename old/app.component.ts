@@ -1,5 +1,5 @@
-import {Component,OnInit} from '@angular/core';
-import {Observable} from "rxjs";
+import { Component, OnInit } from '@angular/core';
+import {Observable} from "rxjs/Observable";
 
 import {HttpClient} from "@angular/common/http";
 
@@ -64,7 +64,7 @@ export interface Aula {
 
 export class AppComponent implements OnInit {
     objectKeys = Object.keys;
-    courses$: Observable<any>;
+    courses$: Observable<Course[]>;
     docentes$: Array<Docente>;
     classes$: Array<Classe>;
     aulas$: Array<Aula>;
@@ -74,16 +74,7 @@ export class AppComponent implements OnInit {
 
     selitem: string;
 
-    term:any;
-
     constructor(private http:HttpClient) {
-      this.courses$ = new Observable();
-      var tdocentes = new Array<Docente>();
-      this.classes$ = new Array<Classe>();
-      this.aulas$ = new Array<Aula>();
-      this.leziones$ = new Array<Lezione>();
-      this.selitem = "";
-
     }
 
     ngOnInit() {
