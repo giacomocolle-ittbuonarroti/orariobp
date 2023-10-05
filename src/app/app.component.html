@@ -57,40 +57,41 @@
         </table>
       </div >
     </div>
-    <div class="row">
-			<div class="col-sm-12 box-orario" style="display:block; height:100%;">
-        <div style="overflow:auto;">
-          <h3>{{selitem}}</h3>
-          <table *ngIf="selitem" class="table table-bordered table-responsive text-center orario">
-            <thead>
-              <tr>
-                <th></th>
-                <th *ngFor="let giorno of objectKeys(orariotable$['07h50'])" style="vertical-align: middle;" [attr.class]="giorno">{{giorno}} </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr *ngFor="let ora of hours">
-                <td>{{ora}}</td>
-                <td *ngFor="let giorno of objectKeys(orariotable$[ora])" [attr.id]="ora + ' ' + giorno" [attr.rowspan]="orariotable$[ora][giorno]['DURATA']" style="vertical-align:middle;" [attr.class]="giorno">
-                  <div class="materia">{{orariotable$[ora][giorno]['MAT_COD']}}</div>
-                  <br>
-                  <button class="btn btn-primary btn-md btnDocente" (click)="buttonDocenteClick(orariotable$[ora][giorno]['DOC_COGN_NOME1'])" *ngIf="orariotable$[ora][giorno]['DOC_COGN_NOME1']">{{orariotable$[ora][giorno]["DOC_COGN1"]}}</button>
-                  <button class="btn btn-primary btn-md btnDocente" (click)="buttonDocenteClick(orariotable$[ora][giorno]['DOC_COGN_NOME2'])" *ngIf="orariotable$[ora][giorno]['DOC_COGN_NOME2']">{{orariotable$[ora][giorno]["DOC_COGN2"]}}</button>
-                  <br>
-                  <button class="btn btn-success btn-md btcClasse" (click)="buttonClasseClick(orariotable$[ora][giorno]['CLASSE1'])" *ngIf="orariotable$[ora][giorno]['CLASSE1']">{{orariotable$[ora][giorno]["CLASSE1"]}}</button>
-                  <button class="btn btn-success btn-md btcClasse" (click)="buttonClasseClick(orariotable$[ora][giorno]['CLASSE2'])" *ngIf="orariotable$[ora][giorno]['CLASSE2']">{{orariotable$[ora][giorno]["CLASSE2"]}}</button>
-                  <br>
-                  <button class="btn btn-warning btn-md btnAula" (click)="buttonAulaClick(orariotable$[ora][giorno]['AULA1'])" *ngIf="orariotable$[ora][giorno]['AULA1']">{{orariotable$[ora][giorno]["AULA1"]}}</button>
-                  <button class="btn btn-warning btn-md btnAula" (click)="buttonAulaClick(orariotable$[ora][giorno]['AULA2'])" *ngIf="orariotable$[ora][giorno]['AULA2']">{{orariotable$[ora][giorno]["AULA2"]}}</button>
-                  <button class="btn btn-warning btn-md btnAula" (click)="buttonAulaClick(orariotable$[ora][giorno]['AULA3'])" *ngIf="orariotable$[ora][giorno]['AULA3']">{{orariotable$[ora][giorno]["AULA3"]}}</button>
-                </td>
-              </tr> 
-            </tbody>
-          </table>
-        </div>
-			</div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-12 box-orario" style="display:block; height:100%;">
+    <div style="overflow:auto;">
+      <h3>{{selitem}}</h3>
+      <table *ngIf="selitem" class="table table-bordered table-responsive text-center orario">
+        <thead>
+          <tr>
+            <th></th>
+            <th *ngFor="let giorno of objectKeys(orariotable$['07h50'])" style="vertical-align: middle;" [attr.class]="giorno">{{giorno}} </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="ora{{ora}}" *ngFor="let ora of hours">
+            <td style="vertical-align:top;">{{ora}}</td>
+            <td *ngFor="let giorno of objectKeys(orariotable$[ora])" [attr.id]="ora + ' ' + giorno" [attr.rowspan]="orariotable$[ora][giorno]['DURATA']" style="vertical-align:middle;" [attr.class]="giorno">
+              <div class="materia">{{orariotable$[ora][giorno]['MAT_COD']}}</div>
+              <br>
+              <button class="btn btn-primary btn-md btnDocente" (click)="buttonDocenteClick(orariotable$[ora][giorno]['DOC_COGN_NOME1'])" *ngIf="orariotable$[ora][giorno]['DOC_COGN_NOME1']">{{orariotable$[ora][giorno]["DOC_COGN1"]}}</button>
+              <button class="btn btn-primary btn-md btnDocente" (click)="buttonDocenteClick(orariotable$[ora][giorno]['DOC_COGN_NOME2'])" *ngIf="orariotable$[ora][giorno]['DOC_COGN_NOME2']">{{orariotable$[ora][giorno]["DOC_COGN2"]}}</button>
+              <br>
+              <button class="btn btn-success btn-md btcClasse" (click)="buttonClasseClick(orariotable$[ora][giorno]['CLASSE1'])" *ngIf="orariotable$[ora][giorno]['CLASSE1']">{{orariotable$[ora][giorno]["CLASSE1"]}}</button>
+              <button class="btn btn-success btn-md btcClasse" (click)="buttonClasseClick(orariotable$[ora][giorno]['CLASSE2'])" *ngIf="orariotable$[ora][giorno]['CLASSE2']">{{orariotable$[ora][giorno]["CLASSE2"]}}</button>
+              <br>
+              <button class="btn btn-warning btn-md btnAula" (click)="buttonAulaClick(orariotable$[ora][giorno]['AULA1'])" *ngIf="orariotable$[ora][giorno]['AULA1']">{{orariotable$[ora][giorno]["AULA1"]}}</button>
+              <button class="btn btn-warning btn-md btnAula" (click)="buttonAulaClick(orariotable$[ora][giorno]['AULA2'])" *ngIf="orariotable$[ora][giorno]['AULA2']">{{orariotable$[ora][giorno]["AULA2"]}}</button>
+              <button class="btn btn-warning btn-md btnAula" (click)="buttonAulaClick(orariotable$[ora][giorno]['AULA3'])" *ngIf="orariotable$[ora][giorno]['AULA3']">{{orariotable$[ora][giorno]["AULA3"]}}</button>
+            </td>
+          </tr> 
+        </tbody>
+      </table>
     </div>
   </div>
 </div>
+
 <ng-template #noData>No Data Available</ng-template>
 
